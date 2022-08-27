@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<!--Adam Wretfors NTI projekt -->
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Tentamen</title>
+<link rel="stylesheet" href="Style/styleIndex.css">
+    
+  </head>
+  <body>
+    <header>
+
+        <!-- icon till vänster om huvudsidan -->
+        <h1><img src="img/bear2.png" alt="logo björn ansikte">Beställ din bild här!</h1>    
+         <!-- meny -->
+          <nav>
+            <ul> 
+              <li><a href="Hem.html">Startsida</a></li>
+              <li><a href="Bjornen.html">Beställsida</a>
+                <ul> <!-- innre meny  -->
+                  <li><a href="Björngalleriet.html">Kanelbjörn</a></li>
+                  <li><a href="Björngalleriet.html">Brunbjörn </a></li>
+                  <li><a href="Björngalleriet.html">Svartbjörn</a></li>
+                  <li><a href="Björngalleriet.html">Bumbibjörn</a></li>
+                  <li><a href="Björngalleriet.html">Bamse</a></li> 
+                </ul>
+              </li>
+              <li><a href="Bjornen.html">Björnsida</a></li>
+              <li><a href="KontaktaMig.html">Kontakta oss</a></li>
+              <li><a href="#"></a></li> <!--för att skapa avstånd från höger kanten-->
+            </ul>  
+        </nav>
+      </header>
+<main class="flex-container">
+  <section>
+        <h2>Allt om Björnar</h2>
+        <!-- plats för bild på en björn, krambjörn.png warning för id anvädning men behöver för att ändra storlek-->
+		
+    <img id="björnbilder1" src="img/Björnkram1.jpg" alt="barn kramar björndjur" >
+        <p>Björnar är det största landlevande rovdjur.Bjönen är stor och kommer i olika färger. Storleken kan 
+          variera mycket. I sverige har man hitta björnar som väger  hela 350kg. Det finns björnar som kan väga 
+          upp till 800kg och vara 3 meter långa.En björn är väldigt snabb men den orkar inte springa länge.Björna kan
+          komma upp i en hastighet på 60km/h.Björnen är också väldigt bra på att klädra i träd där den kan hitta föda.
+          Björnens bra luktsinne hjälper den också att hitta mat. 
+        </p>
+      </section>
+    <section>
+        <h2>Svenska Björnar</h2>
+     
+		<img class="björnbilder2" src="img/bamse.png" alt="bild på bamse" >
+        <p>Bamse är en liten brunbjörn som blir världens starkaste 
+          när han äter Farmors dunderhonung.Bamse är spontan och nyfiken. Han är gift med Brummelisa och tillsammans har de fyra barn. Trillingarna Nalle-Maja, Teddy, Brum och 
+          minstingen Brumma.När Bamse inte jobbar i skogen är han ofta ute på äventyr tillsammans med sina bästa vänner Lille Skutt och Skalman.
+
+        </p>
+      </section>
+      <section>
+        <h2>Kontakta oss</h2>
+        <p>Fyll i formuläret nedan så återkommer vi till dig!</p>
+        <!-- plats för formulär-->
+        <form action="http://www.ex.com/ex.php">
+          <label for="fname">Fyll i björn </label><br>
+          <input type="text" id="fname" name="fname" required="required"> <br>
+           <!--  val av affish storlek också ett val kan göras radio   -->
+          <label for="val">Väj storlek på affisch</label> <br>
+          <select name="val" id="val">
+            <option value="100" id="pris1" selected="selected">67x48cm L</option>
+            <option value="250" id="pris2">30x40cm M</option>
+            <option value="500" id="pris3">21x30cm S</option>
+          </select>
+<strong></strong>
+          <fieldset> <!--  radiobuttons val  -->
+            <legend>Välj hur du vill betala:</legend>
+            <input type="radio" name="Betala" id="r1" value="Betala med Swish"/> 
+            <label for="r1">Betala med Swish</label>
+            <br> 
+            <input type="radio" name="Betala" id="r2" value="Betala kontant" checked="checked" /> 
+            <label for="r2">Betala kontant</label>
+          </fieldset>
+
+          
+             <!-- knapp för att skicka beställning  -->
+          <label for="sub1">Skicka din Beställning</label> <br>
+          <input type="submit" id="sub1" value="Skicka björn">
+
+        </form>
+      </section>
+      </main>
+      <footer>
+        <span>&copy; Adams björn och bilder 2022</span>
+      </footer> 
+    </body>
+</html>

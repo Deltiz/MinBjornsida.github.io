@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* fixar textstorlek och typ*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   color: rgb(230, 215, 215);
+   line-height: 1.6;
+
+ }
+ 
+ #case{
+    /*reference bild: https://www.pexels.com/sv-se/sok/stockholm/ */
+     background-image: url(/img/välkomsbjörn.jpg);/* hämtar backgrund*/ 
+     height: 100vh;/* fixar så att backgrunden är utsträckt */ 
+     background-size: cover;
+     background-position: center;
+/*fixar testen i mitten*/
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     /*texten håller sig till mitten*/
+     padding: 0 20px;
+ }
+ h1{
+     font-size: 60px;
+ }
+ p{
+     font-size: 20px;
+ }
+ /* får inte storleken att funka här men om du bara gör .button funkar det men inte over*/
+ #readMe.button{
+font-size: 20px;
+text-decoration: none;
+color: rgb(230, 215, 215);
+border: 2px solid;
+border-radius: 15px;
+background-color: #926239;
+ }
+ /*texten lysser upp när användar har mussen på texten*/
+ #readMe:hover{
+     background-color: #926239;
+     color: rgb(230, 215, 215);
+
+ }

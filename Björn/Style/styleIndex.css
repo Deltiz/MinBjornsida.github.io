@@ -1,0 +1,167 @@
+
+
+/* Länka in webfonten "Open Sans" från google fonts här*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+ /* rundar alla elemnts hörn
+ border: 1px solid rgb(9, 231, 39); 
+ border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem; 
+  */
+}
+
+  /*text och färg */
+html {  
+ 
+  font-size: 20px;
+  font-family: 'Open Sans', garamond;
+}
+header>img {
+  width: 100px;
+}
+
+
+
+
+  /*Menyn*/
+
+nav{
+  width: 100%;
+  height: 95px;
+ margin-bottom: 0px;
+}  
+ header nav{
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+ }
+
+ nav ul{ 
+  
+  float: right;
+}
+
+  /*meny plasering */
+nav ul li{ 
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+  /*Menyn view*/
+nav ul li a{ 
+  display: block;
+  color:#ccc;
+  text-decoration: none;
+  padding: 22px 14px;
+}
+/*hidden menu*/
+nav ul li ul{ 
+  display: none;
+  position: absolute; 
+ background-color: #333;
+  
+}
+
+  /*synling meny efter varandra */
+nav ul li:hover ul { 
+  display: block;   
+}
+
+nav ul li ul li {   
+  width: 150px; 
+ }
+ 
+nav ul li ul li a{  
+ padding: 6px 12px;
+}
+
+  /*backgrund hiddenmeny */
+nav ul li ul li a:hover{  
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+ }
+
+ nav ul a:hover{
+  background-color: #333;
+ }
+ 
+/* ****************************************************************************** */
+/* Styling och layout */
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  /*background-color: */
+}
+
+  /*bild och text korrigering */
+.flex-container > section {
+  background-color: white;
+  width: 100%;
+  margin: 10px;
+  padding: 3px;
+  /*text-align: center;
+  line-height: 75px;*/
+  font-size: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0.3rem;
+}
+
+ /* header logo och backgrund*/
+h2 {
+  text-align: center;
+}
+header{
+  background-color: white;
+  
+}
+header img {
+  width: 100px;
+  margin: 1px auto 1px auto;
+  vertical-align: middle; 
+}
+
+main{
+  background-color: white;
+  width: 100%;;
+  
+}
+body{
+
+  margin: 1rem;
+ 
+}
+
+footer{
+  background-color: #333;
+  color: #ccc;
+  text-align: center;
+}
+/* storlek på bilder */
+#björnbilder1{
+  width: 435px;
+  height: 65vh;
+ 
+}
+.björnbilder2{
+  width: 70%;
+}
+/* ****************************************************************************** */
+/*Responsivitet till vis del */ 
+
+
+@media only screen and ( max-width: 875px){
+
+  .flex-container {
+    width: 48%;
+    display: inline;
+  }
+  header nav ul{
+   display: inline-flex;
+ }
+
+}
+
+
+
+/* ****************************************************************************** */

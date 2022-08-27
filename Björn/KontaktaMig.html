@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KontaktSida</title>
+    <link rel="stylesheet" href="Style/styleKontakt.css">
+
+  
+</head>
+<body>
+<!--formulär -->
+	<div class="Contact">
+		<fieldset>
+			<legend>Kontakta oss</legend>
+		<form action="#">
+			<!--input från användaren -->
+			 <p>Namn:<br>
+			  <input type="text" name="name" size="20"
+			  maxlength="30" />
+			 </p>
+			 <p>Telefonummer:<br>
+				<input type="text" name="name" size="20"
+				maxlength="30" />
+			   </p>
+			 <p> Email:<br>
+				 <input type="password" name ="passowrd" size="16"
+				 maxlength="30" />
+			  </p> <br>	<!--en valmöjlighets knappar  -->
+			  <label for="man">Pojke:</label>
+			  <input type="radio" name="kön" id="man">
+			  <label for="Kvinna">Flicka:</label>
+			  <input type="radio" name="kön" id="Kvinna">
+              <label for="Kvinna">Annat:</label>
+			  <input type="radio" name="kön"> <br><br>
+			  <!--meddeleande  -->
+			  <p>Meddelande:</p> 
+              
+			  <textarea name="comments" cols="20" rows="5">Skriv här...</textarea>
+			  <br><!--knapp -->
+			  <button id="button">Sänd</button>
+			
+		  </form>
+		</fieldset>
+		</div> 
+	      <!--bilder  -->
+        <div class="grid">
+            <img src="img/bild.jpeg"  alt="test1"  >
+            <img src="img/bild.jpeg" alt="test2"   >
+            <img src="img/bild.jpeg" alt="test4"   >
+		 <!--	<img src="img/bild.jpeg" alt="test4"   >-->
+        </div>
+        <!--s not in Unicode Normalization Form C. fattar ej hur jag ska lösa denna varning-->
+        <footer>
+             <!--navigation -->
+			<ul id="homepage">
+                <li><a href="Bjornen.html"><p>Tillbaka till Björnsidan</p></a></li>
+            </ul>
+		</footer>
+    
+</body>
+</html>
